@@ -1,6 +1,11 @@
 import * as fs from 'fs';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import path from 'path';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+};
 
 const readPosts = () => {
   const posts = fs.readdirSync(path.join(process.cwd(), 'posts'));

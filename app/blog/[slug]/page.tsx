@@ -2,9 +2,22 @@ import { IPost } from '@/components/IPost';
 import { format } from 'date-fns';
 import fs from 'fs';
 import matter from 'gray-matter';
+import { Metadata } from 'next';
 import path from 'path';
 import { remark } from 'remark';
 import html from 'remark-html';
+
+type Props = {
+  params: { slug: string };
+};
+
+export function generateMetadata({ params }: Props): Metadata {
+  const postContent = readPost(params.slug);
+
+  return {
+    title: postContent.title,
+  };
+}
 
 export async function generateStaticParams() {
   return [
@@ -30,7 +43,7 @@ const readPost = (slug: string): IPost => {
     content: htmlContent,
   };
 };
-export default function Post({ params }: { params: { slug: string } }) {
+export default function Post({ params }: Props) {
   const postContent = readPost(params.slug);
   return (
     <div>

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 export default function Header() {
-  const phone = process.env.NEXT_PUBLIC_PHONE;
+  const phone = `0${process.env.NEXT_PUBLIC_PHONE}`;
 
   return (
     <header className="bg-yellow-400 py-4">
       <div className="container flex items-center justify-between">
         <div className="aspect-[1157/441] h-16">
-          <Link href="/">
+          <Link href={'/'}>
             <svg
               viewBox="0 0 1157 441"
               fill="none"
@@ -112,7 +112,9 @@ export default function Header() {
             </svg>
           </Link>
         </div>
-        <Link href={`tel:${phone}`}>{phone}</Link>
+        <a href={`tel:${phone}`} target="_blank" rel="noopener noreferrer">
+          {phone}
+        </a>
       </div>
     </header>
   );
