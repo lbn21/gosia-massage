@@ -9,7 +9,7 @@ export default function Footer() {
         <ul className="flex gap-2">
           <li>
             <a
-              href={`https://wa.me/044${phone}`}
+              href={`https://wa.me/44${phone}`}
               target="_blank"
               rel="noopener noreferrer"
               title="WhatsApp"
