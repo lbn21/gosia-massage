@@ -6,7 +6,9 @@
   ],
   "importOrder": [
     "^react(.*)",
+    "^next(.*)",
     "<THIRD_PARTY_MODULES>",
+    "^@app/(.*)",
     "^[./]"
   ],
   "importOrderSeparation": true,

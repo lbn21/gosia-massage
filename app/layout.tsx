@@ -1,9 +1,15 @@
 import { ReactNode } from 'react';
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import '@/styles/globals.css';
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+
+import clsx from 'clsx';
+
+import Footer from '@app/components/Footer';
+import Header from '@app/components/Header';
+import '@app/styles/globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white">
+      <body className={clsx(inter.className, 'bg-white')}>
         <Header />
         <main>{children}</main>
         <Footer />

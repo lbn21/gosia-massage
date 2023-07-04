@@ -1,5 +1,7 @@
-import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+
+import gosiaImage from '@app/public/images/gosia_portrait_1488w.webp';
 
 export const metadata = {};
 
@@ -7,9 +9,9 @@ export default function Home() {
   const phone = process.env.NEXT_PUBLIC_PHONE;
 
   return (
-    <div className="container text-center">
+    <div className="container flex flex-col text-center">
       <h1 className="mt-16 text-5xl">Gosia Massage</h1>
-      <p className="mx-auto mt-8 max-w-screen-sm text-xl font-light">
+      <p className="mx-auto mt-8 max-w-screen-sm text-lg font-light">
         My name is Gosia and I am a professionally trained therapist with
         origins in Poland. As a qualified professional, I am dedicated to
         providing personalized massages that are tailored specifically to your
@@ -40,7 +42,19 @@ export default function Home() {
           Call Now
         </a>
       </div>
-      <Link href={'/blog'}>Blog</Link>
+      <Link href={'/blog'} className="m-8">
+        Blog
+      </Link>
+      <div className="flex w-full justify-center overflow-hidden">
+        <Image
+          src={gosiaImage}
+          width={744}
+          height={418}
+          alt="Gosia Massage Portrair Image"
+          sizes="(min-width: 768px) 744px, 100vw"
+          className="rounded-lg"
+        />
+      </div>
     </div>
   );
 }

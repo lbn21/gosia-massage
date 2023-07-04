@@ -1,11 +1,13 @@
-import { IPost } from '@/components/IPost';
+import { Metadata } from 'next';
+
 import { format } from 'date-fns';
 import fs from 'fs';
 import matter from 'gray-matter';
-import { Metadata } from 'next';
 import path from 'path';
 import { remark } from 'remark';
 import html from 'remark-html';
+
+import { IPost } from '@app/components/IPost';
 
 type Props = {
   params: { slug: string };
