@@ -21,8 +21,8 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
+        width="1.5rem"
+        height="1.5rem"
         fill="currentColor"
         viewBox="0 0 576 512"
       >
@@ -37,8 +37,8 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
+        width="1.5rem"
+        height="1.5rem"
         fill="currentColor"
         viewBox="0 0 320 512"
       >
@@ -53,8 +53,8 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
+        width="1.5rem"
+        height="1.5rem"
         fill="currentColor"
         viewBox="0 0 512 512"
       >
@@ -71,8 +71,8 @@ export default function Home() {
     <>
       <div className="container flex flex-col text-center">
         {/* Header */}
-        <h1 className="mt-16 text-5xl">Gosia Massage</h1>
-        <p className="mx-auto my-8 max-w-screen-sm text-lg font-light">
+        <h1 className="mt-16 text-5xl font-medium">Gosia Massage</h1>
+        <p className="mx-auto my-8 max-w-screen-sm text-lg">
           My name is Gosia and I am a professionally trained therapist with
           origins in Poland. As a qualified professional, I am dedicated to
           providing personalized massages that are tailored specifically to your
@@ -125,15 +125,25 @@ export default function Home() {
 
       {/* Services */}
       <div className="bg-neutral-200">
-        <div className="container py-4">
-          <h2 className="text-2xl">Services</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="container py-8 lg:py-12">
+          <h2 className="mb-8 text-3xl font-medium">Services</h2>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {services.map((service) => {
               return (
-                <div key={service.title}>
-                  <div>{service.icon}</div>
-                  <h3 className="text-xl">{service.title}</h3>
-                  <p>{service.description}</p>
+                <div key={service.title} className="flex flex-col gap-2">
+                  <div className="flex aspect-square w-12 items-center justify-center rounded-lg bg-neutral-500 text-white">
+                    {service.icon}
+                  </div>
+                  <h3 className="mt-2 text-xl font-medium lg:mt-4">
+                    {service.title}
+                  </h3>
+                  <p className="grow">{service.description}</p>
+                  <Link
+                    href="/"
+                    className="w-fit text-black underline underline-offset-4"
+                  >
+                    Read more {'->'}
+                  </Link>
                 </div>
               );
             })}
