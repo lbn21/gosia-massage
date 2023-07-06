@@ -14,7 +14,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: {
     template: '%s | Gosia Massage',
-    default: 'Experience Personalized Mobile Massage with Gosia Massage',
+    default:
+      'Gosia Massage - Professional Mobile Massage Services at Your Home',
   },
 };
 
