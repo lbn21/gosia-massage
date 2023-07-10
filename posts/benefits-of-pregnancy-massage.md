@@ -4,9 +4,9 @@ description: As a specialized therapist, I deliver uniquely tailored pregnancy m
 date: 2023-07-09
 image: /images/post/benefits-of-pregnancy-massage-cover.jpg
 altText: Expectant mother receiving a comforting pregnancy massage
-pageTitle: Pregnancy Massage - Gosia Massage
-pageMetaDescription: Embark on the journey of specialized pregnancy massage therapy with Gosia. Experience the nurturing touch that caters to the individual needs of mothers-to-be, fostering a feeling of security and wellness.
-pageMetaKeywords: Pregnancy Massage, Massage Benefits, Expectant Mothers, Enhanced Relaxation, Improved Comfort, Gosia Massage, Gentle Techniques, Specialized Care, Well-being
+pageTitle: "Pregnancy Massage: Wonderful Benefits | Gosia's Blog"
+pageMetaDescription: Dive into specialized pregnancy massage therapy. I provide a nurturing touch for expectant mothers, fostering comfort and wellness.
+pageMetaKeywords: Pregnancy Massage, Massage Benefits, expectant mothers, enhanced relaxation, improved comfort, Gosia Massage, gentle techniques, specialized care, well-being
 ---
 
 Welcome to the world of pregnancy massage at Gosia Massage! As a devoted massage therapist, I've honed my skills to offer a unique form of therapy designed specifically for expectant mothers. Let's delve into the benefits of this specialized approach.

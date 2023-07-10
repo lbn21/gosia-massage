@@ -59,13 +59,7 @@ const jsonLd = {
   ],
 };
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Gosia Massage',
-    default:
-      'Gosia Massage - Professional Mobile Massage Services at Your Home',
-  },
-};
+export const metadata: Metadata = {};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

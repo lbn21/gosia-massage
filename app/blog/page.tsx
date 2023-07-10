@@ -6,12 +6,21 @@ import { format } from 'date-fns';
 import { getPosts } from '@app/utils/PostHelpers';
 
 export const metadata: Metadata = {
-  title:
-    'Gosia Massage Blog - Insights and Tips on Personalized Massage Therapy',
+  title: 'Wellness Insights from Gosia | Massage Therapy Blog',
   description:
-    'Explore the Gosia Massage Blog for valuable insights, tips, and information on personalized massage therapy. Learn about the benefits of different types of massages and how they can enhance your well-being.',
-  keywords:
-    'Gosia Massage Blog, Personalized Massage Therapy, Massage Benefits, Relaxation, Rejuvenation, Stress Relief, Muscle Tension, Pregnancy Massage, Post-Injury Massage, Massage Tips',
+    "I'm Gosia, sharing insights on personalized massage therapy. Explore the benefits of different massages and enhance your wellness.",
+  keywords: [
+    'Gosia Massage Blog',
+    'massage therapy',
+    'wellness tips',
+    'massage benefits',
+    'relaxation',
+    'rejuvenation',
+    'stress relief',
+    'pregnancy massage',
+    'post-injury massage',
+    'massage tips',
+  ],
 };
 
 export default function Blog() {
@@ -41,7 +50,7 @@ export default function Blog() {
               <p className="mb-4 lg:col-start-2">{post.description}</p>
               <Link
                 title={`Read more about ${post.title}`}
-                className="w-fit text-sm text-yellow-600 underline underline-offset-4 lg:col-start-2"
+                className="w-fit text-sm text-yellow-700 underline underline-offset-4 lg:col-start-2"
                 href={`/blog/${post.slug}`}
               >
                 Read more {'->'}
@@ -50,16 +59,6 @@ export default function Blog() {
           );
         })}
       </div>
-
-      {/*<ul>*/}
-      {/*  {posts.map((post) => {*/}
-      {/*    return (*/}
-      {/*      <li key={post}>*/}
-      {/*        <Link href={`/blog/${post}`}>{post}</Link>*/}
-      {/*      </li>*/}
-      {/*    );*/}
-      {/*  })}*/}
-      {/*</ul>*/}
     </div>
   );
 }

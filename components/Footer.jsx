@@ -3,11 +3,24 @@ import Link from 'next/link';
 export default function Footer() {
   const phone = process.env.NEXT_PUBLIC_PHONE;
   return (
-    <footer className="bg-neutral-700 py-10 text-neutral-400">
+    <footer className="bg-neutral-700 py-10 text-neutral-300">
       <div className="container flex items-center justify-between">
-        <Link title="Explore My Blog" className="w-fit" href={`/blog`}>
-          Blog
-        </Link>
+        <nav className="flex gap-4">
+          <Link
+            title="About Gosia Massage"
+            className="w-fit underline underline-offset-4"
+            href={`/about-me`}
+          >
+            About Me
+          </Link>
+          <Link
+            title="Explore My Blog"
+            className="w-fit underline underline-offset-4"
+            href={`/blog`}
+          >
+            Blog
+          </Link>
+        </nav>
         <ul className="flex gap-4">
           <li>
             <a

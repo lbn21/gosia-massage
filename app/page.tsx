@@ -11,24 +11,23 @@ import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
 import { rgbDataURL } from '@app/utils/DataURL';
 
 export const metadata = {
+  title: 'Your Personal Mobile Massage Therapist | Gosia Massage',
   keywords: [
     'Gosia Massage',
     'mobile massage',
-    'home visit massage',
-    'relaxing massage',
+    'home massage',
+    'relaxation',
     'pregnancy massage',
     'post-injury massage',
-    'professional mobile therapist',
+    'professional massage therapist',
     'tailored massage services',
-    'deep tissue techniques',
-    'gentle stretching',
-    'acupressure stimulation',
     'physical rejuvenation',
-    'emotional well-being',
-    'home massage booking',
+    'emotional wellness',
+    'home spa',
+    'massage booking',
   ],
   description:
-    'Discover the transformative power of personalized massage therapy with Gosia Massage. Offering a range of services from relaxing massages to specialized pregnancy and post-injury treatments. Book now for a journey towards relaxation and rejuvenation.',
+    "Experience rejuvenation with Gosia's mobile massage services. Relaxing, pregnancy, or post-injury treatments at your convenience.",
 };
 
 interface IService {
@@ -192,7 +191,7 @@ export default function Home() {
                   <Link
                     title={`Read more about ${service.title}`}
                     href={service.link}
-                    className="w-fit text-yellow-600 underline underline-offset-4 lg:mt-4"
+                    className="w-fit text-yellow-700 underline underline-offset-4 lg:mt-4"
                   >
                     Read more {'->'}
                   </Link>

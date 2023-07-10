@@ -19,6 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: modified,
     },
     {
+      url: 'https://www.gosiamassage.com/about-me',
+      lastModified: modified,
+    },
+    {
       url: 'https://www.gosiamassage.com/blog',
       lastModified: modified,
     },
