@@ -1,12 +1,8 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
-
-import { format } from 'date-fns';
 
 import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
 import { rgbDataURL } from '@app/utils/DataURL';
-import { getPosts } from '@app/utils/PostHelpers';
 
 export const metadata: Metadata = {
   title: 'About Gosia - Your Personal Mobile Massage Therapist',
@@ -17,7 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutMe() {
-  const posts = getPosts();
   return (
     <div className="prose balance-text mx-auto my-12 px-4">
       <Image
@@ -30,7 +25,6 @@ export default function AboutMe() {
         placeholder={'blur'}
         blurDataURL={rgbDataURL(229, 229, 229)}
       />
-
       <h1 className="text-center">About Gosia</h1>
       <hr />
       <p>
