@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { format } from 'date-fns';
 
-import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
 import { rgbDataURL } from '@app/utils/DataURL';
 import { getPostsSlugs, readPost } from '@app/utils/PostHelpers';
 
