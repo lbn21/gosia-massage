@@ -8,6 +8,7 @@ import _90 from '@app/public/images/90_minutes_massage_80_pounds.webp';
 import _120 from '@app/public/images/120_minutes_massage_100_pounds.webp';
 import cards from '@app/public/images/accepted_payment_cards.svg';
 import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
+import { rgbDataURL } from '@app/utils/DataURL';
 
 export const metadata = {
   keywords: [
@@ -34,6 +35,7 @@ interface IService {
   title: string;
   description: string;
   icon: ReactNode;
+  link: string;
 }
 
 interface IPrice {
@@ -53,12 +55,13 @@ const services: IService[] = [
         xmlns="http://www.w3.org/2000/svg"
         width="1.5rem"
         height="1.5rem"
+        viewBox="0 0 945.405 945.405"
         fill="currentColor"
-        viewBox="0 0 576 512"
       >
-        <path d="M568.3 192c-29 .125-135 6.124-213.9 82.1C321.2 304.7 301 338.3 288 369.9c-13-31.63-33.25-65.25-66.38-94.87C142.8 198.2 36.75 192.2 7.75 192C3.375 192 0 195.4 0 199.9c.25 27.88 7.125 126.2 88.75 199.3C172.8 481 256 479.1 288 479.1s115.2 1.025 199.3-80.85C568.9 326 575.8 227.7 576 199.9C576 195.4 572.6 192 568.3 192zM288 302.6c12.75-18.87 27.62-35.75 44.13-50.5c19-18.62 39.5-33.37 60.25-45.25c-16.5-70.5-51.75-133-96.75-172.3c-4.125-3.5-11-3.5-15.12 0c-45 39.25-80.25 101.6-96.75 172.1c20.37 11.75 40.5 26.12 59.25 44.37C260 266.4 275.1 283.7 288 302.6z"></path>
+        <path d="M615.6 894.153H0v-57.4c11.2 8.9 25.5 14.301 40.9 14.301h532.2l42.5 43.099zM266.4 51.252c-33 0-59.8 26.8-59.8 59.8 0 20.5 10.3 38.6 26.1 49.4 6.8-18.8 17.8-36.1 32.4-50.7s31.9-25.6 50.7-32.4c-10.8-15.799-28.9-26.1-49.4-26.1zm-17.1 156.701c0 63 51.101 114 114 114 62.9 0 114-51.1 114-114 0-63-51.1-114-114-114-13.399 0-26.2 2.3-38.1 6.5-32.3 11.5-58 37.1-69.4 69.4-4.2 12-6.5 24.799-6.5 38.1zm-61.9 157.299c-26.7 59.2-84.9 210.5-100.9 248.6h198.6c4.4-10.799 9.301-21.299 14.7-31.199 18.7-34.9 77.101-52.201 63.2-100.9-.1-.4-.3-.801-.4-1.301l52.301 49.602c3.899 3.699 8.6 6.699 13.6 8.6l143 54.6c4.8 1.801 9.8 2.699 14.7 2.699 16.6 0 32.2-10.1 38.399-26.5 8.101-21.199-2.5-45-23.8-53.1l-126.4-48.3c-5.9-2.3-11.301-5.7-15.9-10 0 0-111.3-105.6-111.4-105.7-4.699-4.5-10.8-7.4-17.199-9.5-1.5-.5-3.101-1-4.7-1.4-1.7-.5-3.5-1-5.3-1.4-27.801-7.4-58.7-13.7-87.3-11.2-9.4.8-19.7 3.2-27.7 8.7-9.201 6.599-13.001 17.8-17.501 27.699zM40.9 826.053h542.6l52 52.699c4.9 5 10.8 8.9 17.1 11.5 6.2 2.5 12.801 3.9 19.601 3.9h221.6c28.8 0 52-23.6 51.601-52.4-.5-28.301-24.101-50.699-52.4-50.699H693.8l-135.4-137.4c-10.5-10.701-16.7-15.1-35.5-15.1-32.4 0-482 .299-482 .299-22.6 0-40.9 18.301-40.9 40.9v105.401c0 22.599 18.3 40.9 40.9 40.9zM871 637.452c0-65.299-53-118.299-118.3-118.299s-118.3 53-118.3 118.299c0 65.301 53 118.301 118.3 118.301S871 702.852 871 637.452z" />
       </svg>
     ),
+    link: '/blog/the-power-of-personalized-massage-therapy',
   },
   {
     title: 'Pregnancy Massage',
@@ -66,15 +69,16 @@ const services: IService[] = [
       'As your dedicated therapist, I offer specialized pregnancy massage therapy. Trust in my nurturing touch to address the unique needs of expectant mothers, promoting a sense of security and well-being.',
     icon: (
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5rem"
         height="1.5rem"
+        width="1.5rem"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 205.25 205.25"
         fill="currentColor"
-        viewBox="0 0 320 512"
       >
-        <path d="M112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48zM88 382.1C74.2 379.4 64 366.9 64 352V296.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C77.84 149.6 103.2 133 131.5 128.1C135.6 128.3 139.8 128 144 128H160C161.4 128 162.8 128.1 164.1 128.3C199.8 131.2 229.5 157.6 236.2 193.3L242.3 225.7C286.6 234.3 320 273.2 320 320V352C320 369.7 305.7 384 288 384H232V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V384H152V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480L88 382.1z"></path>
+        <path d="M140.841 200.131c.26.893.21 1.866-.183 2.749a4.001 4.001 0 0 1-3.653 2.37H50.912a4 4 0 0 1-3.048-1.41c-.34-.4-8.32-10.042-8.32-31.65 0-8.972 6.328-19.153 12.447-28.999 4.757-7.654 9.676-15.568 9.817-20.519.136-4.751-3.612-11.48-7.952-19.273-5.414-9.721-12.151-21.818-13.816-35.339-2.972-24.15 8.364-63.513 8.848-65.176A4 4 0 0 1 52.729 0h37.416a4 4 0 0 1 3.745 2.595c.075.199 7.532 19.973 14.403 29.593 3.211 4.496 12.474 9.417 25.414 13.5 5.752 1.814 9.021 7.809 7.443 13.646a49.431 49.431 0 0 1-2.285 6.543c-1.888 4.404-5.275 8.499-8.146 11.457 3.875 1.686 9.032 4.381 14.2 8.428 9.482 7.425 20.786 20.947 20.786 43.199 0 27.873-16.767 45.585-28.513 54.578-5.285-5.874-11.615-12.391-17.541-17.157-13.153-10.577-16.98-13.432-17.137-13.548a4 4 0 0 0-4.776 6.419c.038.028 3.925 2.932 16.898 13.364 9.919 7.974 21.503 21.735 26.205 27.514z" />
       </svg>
     ),
+    link: '/blog/benefits-of-pregnancy-massage',
   },
   {
     title: 'Post-Injury Massage',
@@ -82,15 +86,16 @@ const services: IService[] = [
       'Find relief and recovery with my professional post-injury massage therapy. My techniques aim to alleviate muscle discomfort, enhance mobility, and boost overall rejuvenation, helping you feel your absolute best.',
     icon: (
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5rem"
         height="1.5rem"
+        width="1.5rem"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 122.88 99.35"
         fill="currentColor"
-        viewBox="0 0 512 512"
       >
-        <path d="M502.6 168.1l-159.6-159.5c-12.54-12.54-32.85-12.6-45.46-.1256c-12.68 12.54-12.73 33.1-.1256 45.71l159.6 159.5c12.6 12.59 33.03 12.57 45.59-.0628C515.1 201.9 515.1 181.5 502.6 168.1zM334.4 245.4l-67.88-67.87l55.13-55.12l-45.25-45.25L166.7 186.8C154.1 199.6 145.2 215.6 141.1 233.2L113.3 353.4l-108.6 108.6c-6.25 6.25-6.25 16.37 0 22.62l22.63 22.62c6.25 6.25 16.38 6.25 22.63 0l108.6-108.6l120.3-27.75c17.5-4.125 33.63-13 46.38-25.62l109.6-109.7l-45.25-45.25L334.4 245.4zM279.9 300.1C275.7 304.2 270.3 307.2 264.4 308.6l-79.25 18.25l18.25-79.25c1.375-5.875 4.375-11.25 8.5-15.5l9.375-9.25l67.88 67.87L279.9 300.1z"></path>
+        <path d="M87.81 26.77c-1.9-.94-4.18-1.61-6.9-1.95L68.7 23.01l-5.13-3.03-10.14-9.56c-3.64-2.21-8.31 1.77-6.29 5.95l7.02 8.89c3.73 4.73 3.07 4.79 8.78 6.89 3.27 1.2 7.16 2.44 10.84 3.41l-10.1 15.23-19.75-10.77c-2.46-1.15-4.16-.68-6.82.36L18.16 49.4c-3.17 2.85-.44 10.85 4.83 9.37l17-5.1 18.49 14.54c7.96 4.63 14.79 4.69 19.57-3.59l10.53-16.77c1.37.69 2.39 1.11 2.76 2.4l-8.26 18.32c-2.2 5.13 5.19 9.73 7.36 4.67l11.85-18.85c1.9-2.25 1.66-4.91-.36-7.9l-9.36-14.47c-1.66-2.56-1.97-3.86-4.76-5.25zm-8.67 72.58c-1 0-1.82-.82-1.82-1.82s.82-1.82 1.82-1.82h41.92c1 0 1.82.82 1.82 1.82 0 1.01-.82 1.82-1.82 1.82H79.14zm-31.2-12.26c-1 0-1.82-.82-1.82-1.82s.82-1.82 1.82-1.82h65.47c1 0 1.82.82 1.82 1.82s-.82 1.82-1.82 1.82H47.94zM11.72 53.64c.71.04 1.26.65 1.23 1.36-.04.71-.65 1.27-1.36 1.23l-10.36-.56c-.71-.03-1.26-.65-1.23-1.36.04-.71.65-1.27 1.36-1.23l10.36.56zm1.21 4.57c.6-.4 1.4-.23 1.8.37.4.6.23 1.4-.36 1.8L8 64.58c-.6.4-1.4.23-1.8-.37-.4-.6-.23-1.4.36-1.8l6.37-4.2zm.13-10.28a1.295 1.295 0 1 1-1.09 2.35l-6.2-2.9a1.295 1.295 0 1 1 1.09-2.35l6.2 2.9zM87.3 0c6.43 0 11.64 5.21 11.64 11.64 0 6.43-5.21 11.64-11.64 11.64-6.43 0-11.64-5.21-11.64-11.64C75.66 5.21 80.87 0 87.3 0zM26.52 80.32l14.34-19.94 10.73 8.36-16.81 18.32c-5.11 4.92-11.03-2.58-8.26-6.74z" />
       </svg>
     ),
+    link: '/blog/rediscovering-wellness-with-post-injury-massage',
   },
 ];
 
@@ -115,27 +120,12 @@ const prices: IPrice[] = [
   },
 ];
 
-// Pixel GIF code adapted from https://stackoverflow.com/a/33919020/266535
-const keyStr =
-  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-
-const triplet = (e1: number, e2: number, e3: number) =>
-  keyStr.charAt(e1 >> 2) +
-  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
-  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
-  keyStr.charAt(e3 & 63);
-
-const rgbDataURL = (r: number, g: number, b: number) =>
-  `data:image/gif;base64,R0lGODlhAQABAPAA${
-    triplet(0, r, g) + triplet(b, 255, 255)
-  }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
-
 export default function Home() {
   const phone = process.env.NEXT_PUBLIC_PHONE;
 
   return (
     <>
-      <div className="container flex flex-col text-center">
+      <div className="container balance-text flex flex-col text-center">
         {/* Header */}
         <h1 className="mt-16 text-5xl font-medium">Gosia Massage</h1>
         <p className="mx-auto my-8 max-w-screen-sm text-lg">
@@ -178,7 +168,6 @@ export default function Home() {
             alt="Portrait of Gosia, professional mobile massage therapist"
             sizes="(min-width: 768px) 744px, 100vw"
             className="rounded-lg"
-            loading={'eager'}
             placeholder={'blur'}
             blurDataURL={rgbDataURL(229, 229, 229)}
           />
@@ -189,23 +178,24 @@ export default function Home() {
       <div className="bg-neutral-200">
         <div className="container py-8 md:py-12 lg:py-20">
           <h2 className="mb-8 text-3xl font-medium">Services</h2>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
             {services.map((service) => {
               return (
                 <div key={service.title} className="flex flex-col gap-2">
                   <div className="flex aspect-square w-12 items-center justify-center rounded-lg bg-neutral-500 text-white">
                     {service.icon}
                   </div>
-                  <h3 className="mt-2 text-xl font-medium lg:mt-4">
+                  <h3 className="text-xl font-medium lg:mt-4">
                     {service.title}
                   </h3>
                   <p className="grow">{service.description}</p>
-                  {/*p                  <Link*/}
-                  {/*                    href="/"*/}
-                  {/*                    className="w-fit text-black underline underline-offset-4"*/}
-                  {/*                  >*/}
-                  {/*                    Read more {'->'}*/}
-                  {/*                  </Link>*/}
+                  <Link
+                    title={`Read more about ${service.title}`}
+                    href={service.link}
+                    className="w-fit text-yellow-600 underline underline-offset-4 lg:mt-4"
+                  >
+                    Read more {'->'}
+                  </Link>
                 </div>
               );
             })}

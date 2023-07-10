@@ -19,6 +19,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
     plugin(function ({ addComponents }) {
       addComponents({
         '.btn': {
@@ -39,6 +40,9 @@ module.exports = {
             backgroundColor: 'hsl(142, 70%, 45%)',
             borderColor: 'hsl(142, 70%, 45%)',
           },
+        },
+        '.balance-text': {
+          textWrap: 'balance',
         },
       });
     }),

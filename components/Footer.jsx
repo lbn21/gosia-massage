@@ -1,12 +1,14 @@
+import Link from 'next/link';
+
 export default function Footer() {
   const phone = process.env.NEXT_PUBLIC_PHONE;
   return (
-    <footer className="bg-white py-10 text-neutral-500">
+    <footer className="bg-neutral-700 py-10 text-neutral-400">
       <div className="container flex items-center justify-between">
-        <div>
-          <p>© {new Date().getFullYear()} - All Rights Reserved</p>
-        </div>
-        <ul className="flex gap-2">
+        <Link title="Explore My Blog" className="w-fit" href={`/blog`}>
+          Blog
+        </Link>
+        <ul className="flex gap-4">
           <li>
             <a
               href={`https://wa.me/44${phone}`}
@@ -48,6 +50,9 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="container mt-8 text-sm">
+        <p>© {new Date().getFullYear()} - All Rights Reserved</p>
       </div>
     </footer>
   );
