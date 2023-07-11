@@ -50,7 +50,7 @@ export default function Blog() {
               <p className="mb-4 lg:col-start-2">{post.description}</p>
               <Link
                 title={`Read more about ${post.title}`}
-                className="w-fit text-sm text-yellow-700 underline underline-offset-4 lg:col-start-2"
+                className="w-fit text-sm text-yellow-900 underline underline-offset-4 lg:col-start-2"
                 href={`/blog/${post.slug}`}
               >
                 Read more {'->'}

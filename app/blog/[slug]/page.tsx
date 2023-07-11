@@ -58,7 +58,7 @@ export default function Post({ params }: Props) {
       <article dangerouslySetInnerHTML={{ __html: postContent.content }} />
       <Link
         title="Back to Blog Overview"
-        className="mx-auto my-4 w-fit text-sm text-yellow-600 underline underline-offset-4 lg:col-start-2"
+        className="mx-auto my-4 w-fit text-sm text-yellow-900 underline underline-offset-4 lg:col-start-2"
         href={`/blog`}
       >
         {'<- View all posts'}
