@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 
+import { rgbDataURL } from '@app/app/utils/DataURL';
 import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
-import { rgbDataURL } from '@app/utils/DataURL';
 
 export const metadata: Metadata = {
   title: 'Gosia - Mobile Massage Therapist in Wigan',

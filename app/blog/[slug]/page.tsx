@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 import { format } from 'date-fns';
 
-import { rgbDataURL } from '@app/utils/DataURL';
-import { getPostsSlugs, readPost } from '@app/utils/PostHelpers';
+import { rgbDataURL } from '@app/app/utils/DataURL';
+import { getPostsSlugs, readPost } from '@app/app/utils/PostHelpers';
 
 type Props = {
   params: { slug: string };

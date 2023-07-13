@@ -4,10 +4,12 @@ import path from 'path';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-import { IPost } from '@app/components/IPost';
+import { IPost } from '@app/app/components/IPost';
+
+const postsDirectory = path.join(process.cwd(), 'app/blog/posts');
 
 export const getPostsSlugs = (): string[] => {
-  const posts = fs.readdirSync(path.join(process.cwd(), 'posts'));
+  const posts = fs.readdirSync(postsDirectory);
   return posts.map((filename) => {
     return filename.replace('.md', '');
   });
@@ -15,7 +17,7 @@ export const getPostsSlugs = (): string[] => {
 
 export const readPost = (slug: string): IPost => {
   const fileContent = fs.readFileSync(
-    path.join(process.cwd(), 'posts', `${slug}.md`),
+    path.join(postsDirectory, `${slug}.md`),
     'utf8'
   );
   const { data, content } = matter(fileContent);

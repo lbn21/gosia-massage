@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-import { getPostsSlugs } from '@app/utils/PostHelpers';
+import { getPostsSlugs } from '@app/app/utils/PostHelpers';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPostsSlugs();
@@ -27,5 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: modified,
     },
     ...postsUrls,
+    {
+      url: 'https://www.gosiamassage.com/contact',
+      lastModified: modified,
+    },
   ];
 }

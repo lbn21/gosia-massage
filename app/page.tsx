@@ -3,12 +3,12 @@ import { ReactNode } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
+import { rgbDataURL } from '@app/app/utils/DataURL';
 import _60 from '@app/public/images/60_minutes_massage_60_pounds.webp';
 import _90 from '@app/public/images/90_minutes_massage_80_pounds.webp';
 import _120 from '@app/public/images/120_minutes_massage_100_pounds.webp';
 import cards from '@app/public/images/accepted_payment_cards.svg';
 import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
-import { rgbDataURL } from '@app/utils/DataURL';
 
 export const metadata = {
   title: "Wigan's Mobile Massage Expert | Gosia Massage",

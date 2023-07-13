@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { format } from 'date-fns';
 
-import { getPosts } from '@app/utils/PostHelpers';
+import { getPosts } from '@app/app/utils/PostHelpers';
 
 export const metadata: Metadata = {
   title: 'Your Guide to All Things Massage Therapy & Wellness',
