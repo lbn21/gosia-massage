@@ -41,13 +41,13 @@ export default function ContactMe() {
       <h2>Scheduling an Appointment</h2>
       <p>
         To discuss your specific needs and set up a massage session, please
-        reach out via SMS or WhatsApp. I'm available for home visits throughout
-        the week.
+        reach out via SMS or WhatsApp. I&apos;m available for home visits
+        throughout the week.
       </p>
       <h2>Questions and Feedback</h2>
       <p>
         I value your feedback and am available to clarify any queries you might
-        have regarding my mobile massage services. Please don't hesitate to
+        have regarding my mobile massage services. Please don&apos;t hesitate to
         contact me. Your wellness journey begins here.
       </p>
     </div>
