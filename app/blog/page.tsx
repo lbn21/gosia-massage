@@ -6,21 +6,11 @@ import { format } from 'date-fns';
 import { getPosts } from '@app/utils/PostHelpers';
 
 export const metadata: Metadata = {
-  title: 'Wellness Insights from Gosia | Massage Therapy Blog',
+  title: 'Your Guide to All Things Massage Therapy & Wellness',
   description:
-    "I'm Gosia, sharing insights on personalized massage therapy. Explore the benefits of different massages and enhance your wellness.",
-  keywords: [
-    'Gosia Massage Blog',
-    'massage therapy',
-    'wellness tips',
-    'massage benefits',
-    'relaxation',
-    'rejuvenation',
-    'stress relief',
-    'pregnancy massage',
-    'post-injury massage',
-    'massage tips',
-  ],
+    'Join us in our exploration of the world of massage therapy. Discover techniques, benefits, and tips for improved wellness.',
+  keywords:
+    'Wigan Massage Blog, massage therapy, wellness tips, massage benefits, relaxation, rejuvenation, stress relief, pregnancy massage, post-injury massage, massage tips',
 };
 
 export default function Blog() {

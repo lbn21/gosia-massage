@@ -11,23 +11,11 @@ import gosiaImage from '@app/public/images/gosia_mobile_massage_therapist.webp';
 import { rgbDataURL } from '@app/utils/DataURL';
 
 export const metadata = {
-  title: 'Your Personal Mobile Massage Therapist | Gosia Massage',
-  keywords: [
-    'Gosia Massage',
-    'mobile massage',
-    'home massage',
-    'relaxation',
-    'pregnancy massage',
-    'post-injury massage',
-    'professional massage therapist',
-    'tailored massage services',
-    'physical rejuvenation',
-    'emotional wellness',
-    'home spa',
-    'massage booking',
-  ],
+  title: "Wigan's Mobile Massage Expert | Gosia Massage",
   description:
-    "Experience rejuvenation with Gosia's mobile massage services. Relaxing, pregnancy, or post-injury treatments at your convenience.",
+    "Invigorate your senses with Gosia's mobile massage services within Wigan. Experience my house-visit massages tailored to your needs.",
+  keywords:
+    'Wigan Mobile Massage, Gosia Massage, home massage, relaxation, pregnancy massage, post-injury massage, professional massage therapist, Wigan massage services, physical rejuvenation, emotional wellness, home spa, massage booking',
 };
 
 interface IService {
@@ -126,10 +114,11 @@ export default function Home() {
         {/* Header */}
         <h1 className="mt-16 text-5xl font-medium">Gosia Massage</h1>
         <p className="mx-auto my-8 max-w-screen-sm text-lg">
-          Welcome to Gosia Massage! I&apos;m Gosia, your dedicated massage
-          therapist. I specialize in delivering personalized massages designed
-          to induce relaxation and rejuvenation. Experience the transformative
-          power of tailored massage therapy today - book your appointment now!
+          Welcome to Gosia Massage! I&apos;m Gosia, your mobile massage
+          therapist in Wigan. Specializing in personalized massages designed for
+          relaxation and rejuvenation, I bring wellness right to your doorstep.
+          Experience the transformative power of tailored mobile massage therapy
+          today - book your appointment now!
         </p>
 
         {/* Image */}

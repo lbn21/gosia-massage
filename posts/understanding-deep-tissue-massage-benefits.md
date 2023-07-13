@@ -4,8 +4,8 @@ description: Deep tissue massage is a powerful tool to help alleviate chronic mu
 date: 2023-07-11
 image: /images/post/deep-tissue-massage-cover.jpg
 altText: A person receiving a deep tissue massage
-pageTitle: "Deep Tissue Massage: Unwinding the Knots | Gosia's Blog"
-pageMetaDescription: Dive deep into the world of deep tissue massage therapy, a powerful tool to release chronic muscle tension and improve overall wellness.
+pageTitle: "Deep Tissue Massage: Unwinding the Knots for Wellness"
+pageMetaDescription: Discover deep tissue massage therapy. Learn how it tackles chronic muscle tension, promotes mobility, and enhances wellbeing.
 pageMetaKeywords: Deep Tissue Massage, chronic tension, muscle knots, stress relief, enhanced mobility, improved wellness
 ---
 

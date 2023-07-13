@@ -4,9 +4,9 @@ description: Experience relief and restoration through professional post-injury 
 date: 2023-07-10
 image: /images/post/rediscovering-wellness-post-injury-massage-cover.jpg
 altText: Man receiving a therapeutic post-injury massage
-pageTitle: "Post-Injury Massage: Healing Journey | Gosia's Blog"
-pageMetaDescription: Begin healing with post-injury massage, techniques to alleviate discomfort, promote mobility, rejuvenate.
-pageMetaKeywords: Post-Injury Massage, massage benefits, improved mobility, relaxation, comfort, Gosia Massage, gentle techniques, specialized care, rehabilitation
+pageTitle: "Rediscovering Wellness: The Role of Post-Injury Massage"
+pageMetaDescription: Learn about the healing impact of post-injury massage therapy. Discover how it can ease pain, improve mobility, and restore balance.
+pageMetaKeywords: Post-Injury Massage, massage benefits, improved mobility, relaxation, comfort, gentle techniques, specialized care, rehabilitation
 ---
 
 Welcome to the healing space of Gosia Massage, where we understand the unique needs of individuals recovering from injuries. As a dedicated therapist, I have focused on developing effective techniques for post-injury massage therapy. Let's explore how this approach can help you regain your vitality.
