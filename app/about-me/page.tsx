@@ -35,7 +35,7 @@ const jsonLd = {
     },
   },
   description:
-    "Hello, I'm Gosia, a mobile massage therapist specializing in customized treatments across Wigan. I offer personalized massages in the comfort of your own home in Wigan and surrounding areas. My services include Relaxing Massage, Pregnancy Massage, and Post-Injury Massage.",
+    'Meet Gosia, a mobile massage therapist specializing in customized treatments across Wigan. Book your house-visit session today.',
 };
 
 export default function AboutMe() {

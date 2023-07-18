@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     'Contact Gosia, Mobile Massage Wigan, Book a Massage, Home Visit Massage, Wigan Massage Therapist, Mobile Therapy, Wellness, Health, Contact Massage Therapist',
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.gosiamassage.com/contact',
+  },
+  headline: 'Connect with Gosia: Mobile Massage Therapy, Wigan',
+  image:
+    'https://www.gosiamassage.com/images/gosia_mobile_massage_therapist.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Gosia',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Gosia Massage',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+    },
+  },
+  description:
+    'Contact Gosia, your mobile massage therapist in Wigan, for personalized home sessions. Answering your queries, scheduling appointments, and fostering wellness.',
+};
+
 export default function ContactMe() {
   const phone = `${process.env.NEXT_PUBLIC_PHONE}`;
   return (
@@ -100,6 +126,10 @@ export default function ContactMe() {
         have regarding my mobile massage services. Please don&apos;t hesitate to
         contact me. Your wellness journey begins here.
       </p>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }
