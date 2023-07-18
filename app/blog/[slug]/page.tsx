@@ -32,6 +32,32 @@ export async function generateStaticParams() {
 
 export default function Post({ params }: Props) {
   const postContent = readPost(params.slug);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.gosiamassage.com/blog/${params.slug}`,
+    },
+    headline: postContent.title,
+    image: `https://www.gosiamassage.com${postContent.image}`,
+    author: {
+      '@type': 'Person',
+      name: 'Gosia',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Gosia Massage',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+      },
+    },
+    datePublished: format(new Date(postContent.date), 'yyyy-MM-dd'),
+    description: postContent.pageMetaDescription,
+  };
+
   return (
     <div className="prose balance-text mx-auto my-8 flex flex-col px-4">
       <h1 className="mb-0">{postContent.title}</h1>
@@ -63,6 +89,10 @@ export default function Post({ params }: Props) {
       >
         {'<- View all posts'}
       </Link>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }
