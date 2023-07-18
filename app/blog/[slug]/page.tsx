@@ -65,7 +65,7 @@ export default function Post({ params }: Props) {
         {format(new Date(postContent.date), 'MMMM d, yyyy')}
       </p>
 
-      <div className="relative h-96 overflow-hidden rounded-lg">
+      <div className="relative h-96 aspect-[4/3] overflow-hidden rounded-lg">
         <Image
           alt={postContent.altText}
           src={postContent.image}
