@@ -12,6 +12,32 @@ export const metadata: Metadata = {
     'Gosia, Massage Therapist in Wigan, Personalized Massages, Wigan Mobile Massage, Relaxation, Rejuvenation, Relaxing Massage, Pregnancy Massage, Post-Injury Massage, Wellness, Health, Therapy',
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.gosiamassage.com/about-me',
+  },
+  headline: 'Gosia - Mobile Massage Therapist in Wigan',
+  image:
+    'https://www.gosiamassage.com/images/gosia_mobile_massage_therapist.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Gosia',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Gosia Massage',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+    },
+  },
+  description:
+    "Hello, I'm Gosia, a mobile massage therapist specializing in customized treatments across Wigan. I offer personalized massages in the comfort of your own home in Wigan and surrounding areas. My services include Relaxing Massage, Pregnancy Massage, and Post-Injury Massage.",
+};
+
 export default function AboutMe() {
   return (
     <div className="prose balance-text mx-auto my-12 px-4">
@@ -75,6 +101,10 @@ export default function AboutMe() {
         Experience the personalized touch and expertise of Gosia Massage for a
         truly revitalizing and transformative mobile massage experience.
       </p>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }
