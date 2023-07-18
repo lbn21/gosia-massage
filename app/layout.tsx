@@ -22,10 +22,6 @@ const jsonLd = {
     telephone: '+447940158930',
   },
   url: 'https://www.gosiamassage.com/',
-  telephone: '+447940158930',
-  priceRange: '££',
-  currenciesAccepted: 'GBP',
-  paymentAccepted: 'Cash, Credit Card, Debit Card',
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: {
@@ -35,20 +31,6 @@ const jsonLd = {
     },
     geoRadius: 32186,
   },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '17:00',
-      closes: '20:00',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Saturday', 'Sunday'],
-      opens: '08:00',
-      closes: '20:00',
-    },
-  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Massage Services',
@@ -58,8 +40,6 @@ const jsonLd = {
         itemOffered: {
           '@type': 'Service',
           name: '60 Minute Massage',
-          price: '60',
-          priceCurrency: 'GBP',
         },
       },
       {
@@ -67,8 +47,6 @@ const jsonLd = {
         itemOffered: {
           '@type': 'Service',
           name: '90 Minute Massage',
-          price: '80',
-          priceCurrency: 'GBP',
         },
       },
       {
@@ -76,8 +54,6 @@ const jsonLd = {
         itemOffered: {
           '@type': 'Service',
           name: '120 Minute Massage',
-          price: '100',
-          priceCurrency: 'GBP',
         },
       },
     ],
