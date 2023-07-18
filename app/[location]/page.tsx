@@ -2,8 +2,6 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { format } from 'date-fns';
-
 import { rgbDataURL } from '@app/app/utils/DataURL';
 import {
   getLocationsSlugs,
