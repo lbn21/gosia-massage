@@ -21,7 +21,7 @@ const jsonLd = {
     image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
     telephone: '+447940158930',
   },
-  url: 'https://gosiamassage.com/',
+  url: 'https://www.gosiamassage.com/',
   telephone: '+447940158930',
   priceRange: '££',
   currenciesAccepted: 'GBP',
