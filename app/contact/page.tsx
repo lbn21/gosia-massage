@@ -81,36 +81,43 @@ export default function ContactMe() {
         limited to the following locations:
       </p>
       <ul>
-        <li>Wigan</li>
-        <li>Leigh</li>
-        <li>Tyldesley</li>
-        <li>Skelmersdale</li>
-        <li>Saint Helens</li>
-        <li>Bolton</li>
-        <li>Great Sankey</li>
-        <li>Warrington</li>
-        <li>Prescot</li>
-        <li>Kirkby</li>
-        <li>Radcliffe</li>
-        <li>Eccles</li>
-        <li>Urmston</li>
-        <li>Bury</li>
-        <li>Widnes</li>
-        <li>Stretford</li>
-        <li>Blackburn</li>
-        <li>Runcorn</li>
-        <li>Salford</li>
-        <li>Preston</li>
         <li>Altrincham</li>
-        <li>Sale</li>
-        <li>Manchester</li>
+        <li>Atherton</li>
+        <li>Bootle</li>
+        <li>Bolton</li>
+        <li>Bury</li>
+        <li>Chorley</li>
         <li>Crosby</li>
-        <li>Southport</li>
-        <li>Middleton</li>
+        <li>Darwen</li>
+        <li>Eccles</li>
+        <li>Farnworth</li>
+        <li>Golborne</li>
+        <li>Great Sankey</li>
+        <li>Hindley</li>
+        <li>Kirkby</li>
+        <li>Leyland</li>
+        <li>Litherland</li>
         <li>Liverpool</li>
-        <li>Birkenhead</li>
-        <li>Wallasey</li>
+        <li>Manchester</li>
         <li>Northwich</li>
+        <li>Ormskirk</li>
+        <li>Prescot</li>
+        <li>Prestwich</li>
+        <li>Radcliffe</li>
+        <li>Runcorn</li>
+        <li>Saint Helens</li>
+        <li>Sale</li>
+        <li>Salford</li>
+        <li>Skemersdale</li>
+        <li>Stretford</li>
+        <li>Tyldesley</li>
+        <li>Urmston</li>
+        <li>Walkden</li>
+        <li>Warrington</li>
+        <li>Westhoughton</li>
+        <li>Whitefield</li>
+        <li>Widnes</li>
+        <li>Wigan</li>
       </ul>
 
       <h2>Scheduling an Appointment</h2>
