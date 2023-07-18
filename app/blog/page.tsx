@@ -13,6 +13,32 @@ export const metadata: Metadata = {
     'Wigan Massage Blog, massage therapy, wellness tips, massage benefits, relaxation, rejuvenation, stress relief, pregnancy massage, post-injury massage, massage tips',
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.gosiamassage.com/blog',
+  },
+  headline: 'Your Guide to All Things Massage Therapy & Wellness',
+  image:
+    'https://www.gosiamassage.com/images/gosia_mobile_massage_therapist.webp',
+  author: {
+    '@type': 'Person',
+    name: 'Gosia',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Gosia Massage',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+    },
+  },
+  description:
+    'Join us in our exploration of the world of massage therapy. Discover techniques, benefits, and tips for improved wellness.',
+};
+
 export default function Blog() {
   const posts = getPosts();
   return (
@@ -49,6 +75,11 @@ export default function Blog() {
           );
         })}
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }
