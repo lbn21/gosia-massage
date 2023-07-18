@@ -25,10 +25,10 @@ export function generateMetadata({ params }: Props): Metadata {
 }
 
 export async function generateStaticParams() {
-  const slugs = getLocationsSlugs();
-  return slugs.map((slug) => {
+  const locations = getLocationsSlugs();
+  return locations.map((location) => {
     return {
-      slug,
+      location,
     };
   });
 }

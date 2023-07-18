@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
-import { ILocation } from '@app/app/components/ILocation';
-import { getLocations } from '@app/app/utils/LocationHelpers';
+import {
+  getLocations,
+  getLocationsBasic,
+} from '@app/app/utils/LocationHelpers';
 
 export const metadata: Metadata = {
   title: 'Connect with Gosia: Mobile Massage Therapy, Wigan',
@@ -38,48 +40,8 @@ const jsonLd = {
     'Contact Gosia, your mobile massage therapist in Wigan, for personalized home sessions. Answering your queries, scheduling appointments, and fostering wellness.',
 };
 
-const LOCATIONS: { slug: string; name: string }[] = [
-  { slug: 'altrincham', name: 'Altrincham' },
-  { slug: 'atherton', name: 'Atherton' },
-  { slug: 'bootle', name: 'Bootle' },
-  { slug: 'bolton', name: 'Bolton' },
-  { slug: 'bury', name: 'Bury' },
-  { slug: 'chorley', name: 'Chorley' },
-  { slug: 'crosby', name: 'Crosby' },
-  { slug: 'darwen', name: 'Darwen' },
-  { slug: 'eccles', name: 'Eccles' },
-  { slug: 'farnworth', name: 'Farnworth' },
-  { slug: 'golborne', name: 'Golborne' },
-  { slug: 'great-sankey', name: 'Great Sankey' },
-  { slug: 'hindley', name: 'Hindley' },
-  { slug: 'kirkby', name: 'Kirkby' },
-  { slug: 'leigh', name: 'Leigh' },
-  { slug: 'leyland', name: 'Leyland' },
-  { slug: 'litherland', name: 'Litherland' },
-  { slug: 'liverpool', name: 'Liverpool' },
-  { slug: 'manchester', name: 'Manchester' },
-  { slug: 'northwich', name: 'Northwich' },
-  { slug: 'ormskirk', name: 'Ormskirk' },
-  { slug: 'prescot', name: 'Prescot' },
-  { slug: 'prestwich', name: 'Prestwich' },
-  { slug: 'radcliffe', name: 'Radcliffe' },
-  { slug: 'runcorn', name: 'Runcorn' },
-  { slug: 'saint-helens', name: 'Saint Helens' },
-  { slug: 'sale', name: 'Sale' },
-  { slug: 'salford', name: 'Salford' },
-  { slug: 'skemersdale', name: 'Skemersdale' },
-  { slug: 'stretford', name: 'Stretford' },
-  { slug: 'tyldesley', name: 'Tyldesley' },
-  { slug: 'urmston', name: 'Urmston' },
-  { slug: 'walkden', name: 'Walkden' },
-  { slug: 'warrington', name: 'Warrington' },
-  { slug: 'westhoughton', name: 'Westhoughton' },
-  { slug: 'whitefield', name: 'Whitefield' },
-  { slug: 'widnes', name: 'Widnes' },
-  { slug: 'wigan', name: 'Wigan' },
-];
-
 export default function ContactMe() {
+  const locationsBasic = getLocationsBasic();
   const locations = getLocations();
 
   const phone = `${process.env.NEXT_PUBLIC_PHONE}`;
@@ -129,7 +91,7 @@ export default function ContactMe() {
       </p>
 
       <ul>
-        {LOCATIONS.map((location) => (
+        {locationsBasic.map((location) => (
           <li key={location.name}>
             {locations.some((loc) => loc.name === location.name) ? (
               <Link
