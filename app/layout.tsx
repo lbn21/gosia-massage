@@ -15,7 +15,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HealthAndBeautyBusiness',
   name: 'Gosia Massage',
-  image: 'https://gosiamassage.com/images/logo.svg',
+  image: 'https://gosiamassage.com/images/gosia-massage-logo.png',
   '@id': 'https://gosiamassage.com/',
   url: 'https://gosiamassage.com/',
   telephone: '+447940158930',
@@ -24,9 +24,7 @@ const jsonLd = {
   paymentAccepted: 'Cash, Credit Card, Debit Card',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '',
     addressLocality: 'Wigan',
-    postalCode: '',
     addressCountry: 'GB',
   },
   geo: {
@@ -57,6 +55,8 @@ const jsonLd = {
       closes: '20:00',
     },
   ],
+  description:
+    'At Gosia Massage, I offer professional mobile massage services in and around Wigan. I bring personalized, professional massage services to your home.',
 };
 
 export const metadata: Metadata = {};
