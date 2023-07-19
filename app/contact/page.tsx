@@ -30,7 +30,7 @@ const jsonLd = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Gosia Massage',
+    name: "Gosia's Mobile Massage Therapy",
     logo: {
       '@type': 'ImageObject',
       url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
@@ -39,7 +39,6 @@ const jsonLd = {
   description:
     'Contact Gosia, your mobile massage therapist in Wigan, for personalized home sessions. Answering your queries, scheduling appointments, and fostering wellness.',
 };
-
 export default function ContactMe() {
   const locationsBasic = getLocationsBasic();
   const locations = getLocations();

@@ -48,7 +48,7 @@ export default function Post({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Gosia Massage',
+      name: "Gosia's Mobile Massage Therapy",
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',

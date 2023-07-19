@@ -29,16 +29,15 @@ const jsonLd = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Gosia Massage',
+    name: "Gosia's Mobile Massage Therapy",
     logo: {
       '@type': 'ImageObject',
       url: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
     },
   },
   description:
-    'Join us in our exploration of the world of massage therapy. Discover techniques, benefits, and tips for improved wellness.',
+    'Join me in exploring the world of massage therapy. Discover techniques, benefits, and tips for improved wellness.',
 };
-
 export default function Blog() {
   const posts = getPosts();
   return (

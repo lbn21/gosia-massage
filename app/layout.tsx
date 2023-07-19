@@ -13,15 +13,22 @@ const inter = Inter({ subsets: ['latin'] });
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  serviceType: 'Mobile Massage Therapy',
-  provider: {
-    '@type': 'Person',
-    name: 'Gosia',
-    image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
-    telephone: '+447940158930',
-  },
+  '@type': 'LocalBusiness',
+  name: "Gosia's Mobile Massage Therapy",
+  description:
+    "Gosia's Mobile Massage Therapy provides professional massage therapy services in the comfort of your home in the Wigan area. Experience deep relaxation and recovery with our therapeutic massage services, delivered by an experienced therapist.",
+  image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+  telephone: '+447940158930',
   url: 'https://www.gosiamassage.com/',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Wigan',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 53.545067,
+    longitude: -2.632507,
+  },
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: {
@@ -31,6 +38,24 @@ const jsonLd = {
     },
     geoRadius: 32186,
   },
+  paymentAccepted:
+    'Payments can be made using Credit Card, Debit Card, and Cash',
+  priceRange: '£60-£100',
+  currenciesAccepted: 'GBP',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '17:00',
+      closes: '20:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday', 'Sunday'],
+      opens: '08:00',
+      closes: '20:00',
+    },
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Massage Services',
@@ -41,6 +66,8 @@ const jsonLd = {
           '@type': 'Service',
           name: '60 Minute Massage',
         },
+        price: '£60',
+        priceCurrency: 'GBP',
       },
       {
         '@type': 'Offer',
@@ -48,6 +75,8 @@ const jsonLd = {
           '@type': 'Service',
           name: '90 Minute Massage',
         },
+        price: '£80',
+        priceCurrency: 'GBP',
       },
       {
         '@type': 'Offer',
@@ -55,13 +84,12 @@ const jsonLd = {
           '@type': 'Service',
           name: '120 Minute Massage',
         },
+        price: '£100',
+        priceCurrency: 'GBP',
       },
     ],
   },
-  description:
-    'At Gosia Massage, I offer professional mobile massage services in and around Wigan. I bring personalized, professional massage services to your home.',
 };
-
 export const metadata: Metadata = {};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
