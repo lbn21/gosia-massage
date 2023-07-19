@@ -38,7 +38,7 @@ export default function Location({ params }: Props) {
     <div className="prose balance-text mx-auto my-8 flex flex-col px-4">
       <h1 className="mb-0">{`Mobile Massage Therapy in ${locationContent.name}`}</h1>
       <p className="mt-0 text-gray-500">{locationContent.borough}</p>
-      <div className="relative h-96 overflow-hidden rounded-lg">
+      <div className="relative aspect-video overflow-hidden rounded-lg">
         <Image
           alt={`Image of ${locationContent.name}`}
           src={locationContent.image}
