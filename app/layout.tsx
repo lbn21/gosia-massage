@@ -26,17 +26,17 @@ const jsonLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 53.545067,
-    longitude: -2.632507,
+    latitude: 53.546724,
+    longitude: -2.630986,
   },
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: {
       '@type': 'GeoCoordinates',
-      latitude: 53.545067,
-      longitude: -2.632507,
+      latitude: 53.546724,
+      longitude: -2.630986,
     },
-    geoRadius: 32186,
+    geoRadius: 29772,
   },
   paymentAccepted:
     'Payments can be made using Credit Card, Debit Card, and Cash',
