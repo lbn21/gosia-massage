@@ -1,7 +1,7 @@
 ---
 name: Altrincham
 borough: Trafford, Greater Manchester
-image: /images/location/altrincham-image.jpeg
+image: /images/location/altrincham-image.jpg
 ---
 
 Welcome to Gosia Massage, your dedicated mobile massage service in Altrincham, Trafford. As a self-employed massage therapist, I understand that life in Altrincham can be busy and demanding. That's why I bring the relaxation and wellness directly to your doorstep. Whether you're seeking to unwind after a hectic day, need targeted therapy for muscle tension, or looking for a professional massage service in Altrincham, I am here to help.
