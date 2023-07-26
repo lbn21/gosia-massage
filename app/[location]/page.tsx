@@ -16,8 +16,8 @@ export function generateMetadata({ params }: Props): Metadata {
   const locationContent = readLocation(params.location);
 
   return {
-    title: `Mobile Massage Therapy in ${locationContent.name}`,
-    description: `Experience the benefits of mobile massage therapy in ${locationContent.name} with Gosia Massage. Tailored sessions designed by Gosia to promote relaxation and well-being. Book your appointment now!`,
+    title: `Experience Gosia's Mobile Massage Therapy in ${locationContent.name}`,
+    description: `Discover the benefits of Gosia's tailored mobile massage therapy sessions in ${locationContent.name}. Promote relaxation and well-being in the comfort of your own space. Book your appointment now!`,
     keywords: `mobile massage, ${locationContent.name}, relaxation, well-being, appointment, therapy, Gosia Massage`,
   };
 }
@@ -36,7 +36,7 @@ export default function Location({ params }: Props) {
 
   return (
     <div className="prose balance-text mx-auto my-8 flex flex-col px-4">
-      <h1 className="mb-0">{`Mobile Massage Therapy in ${locationContent.name}`}</h1>
+      <h1 className="mb-0">{`Relax with Mobile Massage in ${locationContent.name}`}</h1>
       <p className="mt-0 text-gray-500">{locationContent.borough}</p>
       <div className="relative aspect-video overflow-hidden rounded-lg">
         <Image
