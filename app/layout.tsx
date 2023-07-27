@@ -4,14 +4,16 @@ import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import clsx from 'clsx';
+import { format } from 'date-fns';
 
 import Footer from '@app/app/components/Footer';
 import Header from '@app/app/components/Header';
+import { REVIEWS } from '@app/app/data/Reviews';
 import '@app/app/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const jsonLd = {
+const jsonLd: any = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: "Gosia's Mobile Massage Therapy",
@@ -20,6 +22,7 @@ const jsonLd = {
   image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
   telephone: '+447940158930',
   url: 'https://www.gosiamassage.com/',
+  sameAs: ['https://www.facebook.com/gosia.massage.wigan'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Wigan',
@@ -93,6 +96,49 @@ const jsonLd = {
 export const metadata: Metadata = {};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const reviews = REVIEWS.map((review) => {
+    return {
+      '@type': 'Review',
+      itemReviewed: {
+        '@type': 'LocalBusiness',
+        name: "Gosia's Mobile Massage Therapy",
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Wigan',
+        },
+        telephone: '+447940158930',
+        image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
+        priceRange: '£60-£100',
+      },
+      author: {
+        '@type': 'Person',
+        name: review.name,
+      },
+      datePublished: format(new Date(review.date), 'yyyy-MM-dd'),
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: review.rating,
+        bestRating: '5',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Google',
+        sameAs: review.link,
+      },
+      reviewBody: review.content,
+    };
+  });
+
+  const aggregateRating = {
+    '@type': 'AggregateRating',
+    ratingValue:
+      REVIEWS.reduce((acc, review) => acc + review.rating, 0) / REVIEWS.length,
+    reviewCount: REVIEWS.length,
+  };
+
+  jsonLd['review'] = reviews;
+  jsonLd['aggregateRating'] = aggregateRating;
+
   return (
     <html lang="en">
       <body className={clsx(inter.className, 'bg-white')}>
