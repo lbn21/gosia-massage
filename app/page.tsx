@@ -216,8 +216,9 @@ export default function Home() {
 
       {/* Reviews */}
       <div className="balance-text bg-white">
-        <div className="container py-8 md:py-12 lg:py-20">
+        <div className="container flex flex-col items-center py-8 md:py-12 lg:py-20">
           <h2 className="mb-8 text-3xl font-medium">What my customers say</h2>
+
           {REVIEWS.map((review) => {
             return (
               <div
