@@ -12,6 +12,16 @@ export type Review = {
 
 export const REVIEWS: Review[] = [
   {
+    id: 2,
+    name: 'John Harvey',
+    content:
+      'Brilliant massage from a lovely lady. Listens to your injuries and how she can give the correct massage, Great price and massage in your home. Great business well done Gosia.',
+    rating: 5,
+    date: new Date(1690486957000),
+    avatar: generateColorsAndInitials('John Harvey'),
+    link: 'https://g.co/kgs/iAwCeV',
+  },
+  {
     id: 1,
     name: 'Keith Rushton',
     content:
