@@ -99,17 +99,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const reviews = REVIEWS.map((review) => {
     return {
       '@type': 'Review',
-      itemReviewed: {
-        '@type': 'LocalBusiness',
-        name: "Gosia's Mobile Massage Therapy",
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Wigan',
-        },
-        telephone: '+447940158930',
-        image: 'https://www.gosiamassage.com/images/gosia-massage-logo.png',
-        priceRange: '£60-£100',
-      },
       author: {
         '@type': 'Person',
         name: review.name,
