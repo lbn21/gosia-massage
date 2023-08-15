@@ -59,13 +59,13 @@ export default function ContactMe() {
         I&apos;m available to provide my services during the following hours:
       </p>
       <ul>
-        <li>Monday: 5pm to 8pm</li>
-        <li>Tuesday: 5pm to 8pm</li>
-        <li>Wednesday: 5pm to 8pm</li>
-        <li>Thursday: 5pm to 8pm</li>
-        <li>Friday: 5pm to 8pm</li>
-        <li>Saturday: 8am to 8pm</li>
-        <li>Sunday: 8am to 8pm</li>
+        <li>Monday: 4pm to 8pm</li>
+        <li>Tuesday: 4pm to 8pm</li>
+        <li>Wednesday: 4pm to 8pm</li>
+        <li>Thursday: 4pm to 8pm</li>
+        <li>Friday: 4pm to 8pm</li>
+        <li>Saturday: 9am to 8pm</li>
+        <li>Sunday: 9am to 8pm</li>
       </ul>
 
       <h2>How to Contact Me</h2>
